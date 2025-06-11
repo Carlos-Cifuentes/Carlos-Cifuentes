@@ -2,27 +2,53 @@ import React from 'react'
 import styled from 'styled-components'
 import htmlImg from '../assets/html.png'
 import cssImg from '../assets/css-3.png'
-import phpImg from '../assets/php.png'
 import jsImg from '../assets/js.png'
-import mysqlImg from '../assets/mysql.png'
 import reactImg from '../assets/React.png'
-import serverImg from '../assets/sql-server.png'
 import bootstrapImg from '../assets/Bootstrap_logo.png'
 import tailwindImg from '../assets/tailwind_css.png'
 import materialImg from '../assets/Material-UI.png'
 import viteImg from '../assets/vitejs.svg'
 import figmaImg from '../assets/figma.png'
+import csharpImg from '../assets/Csharp.png'
+import nodeImg from '../assets/nodejs.png'
+import expressImg from '../assets/Express.png'
+import mysqlImg from '../assets/mysql.png'
+import serverImg from '../assets/sql-server.png'
+import mongoImg from '../assets/mongodb.png'
+import phpImg from '../assets/php.png'
+import jwtImg from '../assets/jwt.png'
+import gitImg from '../assets/git.png'
+import githubImg from '../assets/github.jpg'
+import typescriptImg from '../assets/typescript.png'
+import vercelImg from '../assets/vercel.png'
+import apirestfulImg from '../assets/rest-api.png'
+
+const backendSkills = [
+  { img: nodeImg, alt: 'Node.js', position: 1 },
+  { img: expressImg, alt: 'Express.js', position: 2 },
+  { img: mysqlImg, alt: 'MySQL', position: 3 },
+  { img: serverImg, alt: 'SQL Server', position: 4 },
+  { img: mongoImg, alt: 'MongoDB', position: 5 },
+  { img: phpImg, alt: 'PHP', position: 6 },
+  { img: apirestfulImg, alt: 'Restful APIs', position: 7 },
+  { img: jwtImg, alt: 'JWT', position: 8 },
+  { img: gitImg, alt: 'Git', position: 9 },
+  { img: githubImg, alt: 'GitHub', position: 10 },
+  { img: vercelImg, alt: 'Vercel', position: 11 }
+];
 
 const skills = [
   { img: htmlImg, alt: 'HTML', position: 1 },
   { img: cssImg, alt: 'CSS', position: 2 },
   { img: jsImg, alt: 'JS', position: 3 },
   { img: reactImg, alt: 'React', position: 4 },
-  { img: bootstrapImg, alt: 'Bootstrap', position: 5 },
-  { img: tailwindImg, alt: 'Tailwind CSS', position: 6 },
-  { img: materialImg, alt: 'Material UI', position: 7 },
-  { img: viteImg, alt: 'Vite', position: 8 },
-  { img: figmaImg, alt: 'Figma', position: 9 }
+  { img: typescriptImg, alt: 'TypeScript', position: 5 },
+  { img: csharpImg, alt: 'C#', position: 6 },
+  { img: bootstrapImg, alt: 'Bootstrap', position: 7 },
+  { img: tailwindImg, alt: 'Tailwind CSS', position: 8 },
+  { img: materialImg, alt: 'Material UI', position: 9 },
+  { img: viteImg, alt: 'Vite', position: 10 },
+  { img: figmaImg, alt: 'Figma', position: 11 }
 ];
 
 const Skills = () => {
@@ -31,7 +57,7 @@ const Skills = () => {
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">Skills</h2>
 
       <StyledWrapper>
-        <div className="slider " style={{'--width': '140px', '--height': '140px', '--quantity': 9}}>
+        <div className="slider " style={{'--width': '100px', '--height': '100px', '--quantity': 11}}>
           <div className="list">
             {skills.map((skill, index) => (
                   <div key={index} className="item" style={{ '--position': skill.position }}>
@@ -43,6 +69,21 @@ const Skills = () => {
           </div>
         </div>
       </StyledWrapper>
+
+      <h3 className="text-xl font-semibold text-center mt-10 mb-6"></h3>
+<StyledWrapper reverse>
+  <div className="slider" reverse="true" style={{ '--width': '100px', '--height': '100px', '--quantity': backendSkills.length }}>
+    <div className="list">
+      {backendSkills.map((skill, index) => (
+        <div key={index} className="item" style={{ '--position': skill.position }}>
+          <div className="card">
+            <img src={skill.img} alt={skill.alt} />
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</StyledWrapper>
     </section>
   )
 }
@@ -53,6 +94,7 @@ const StyledWrapper = styled.div`
     height: 100%;
     padding: 15px;
     border-radius: 8px;
+    background: #056bfa27;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     color: white;
     text-align: center;
@@ -97,13 +139,7 @@ const StyledWrapper = styled.div`
       left: calc(var(--width) * -1);
     }
   }
-  .slider:hover .item {
-    animation-play-state: paused !important;
-    filter: grayscale(1);
-  }
-  .slider .item:hover {
-    filter: grayscale(0);
-  }
+  
   .slider[reverse="true"] .item {
     animation: reversePlay 10s linear infinite;
   }
@@ -114,6 +150,21 @@ const StyledWrapper = styled.div`
     to {
       left: 100%;
     }
+
+  .slider[reverse="true"] .item {
+    animation: reversePlay 10s linear infinite;
+  }
+
+  @keyframes reversePlay {
+    from {
+      left: calc(var(--width) * -1);
+    }
+    to {
+      left: 100%;
+    }
+  }
+
   }`;
+
 
 export default Skills

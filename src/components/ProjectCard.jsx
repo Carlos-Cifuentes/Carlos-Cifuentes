@@ -15,8 +15,8 @@ import Button from './Button';
                 style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             />
             <p className="card-title">{title}</p>
-            <p className="card-body">{description}</p>
-            {/*
+            {/*<p className="card-body">{description}</p>
+            
             <div className="tecnologias">
                 <a className="socialContainer containerOne" href="#">
                 <FaBootstrap className="socialSvg linkdinSvg"/>
@@ -43,9 +43,9 @@ import Button from './Button';
   .card {
     padding: 15px;
     width: 100%;
-    min-height: 370px;
+    min-height: 320px;
     border-radius: 25px;
-    background: #171717;
+    background: #056bfa27;
     transition: 0.4s;
   }
 

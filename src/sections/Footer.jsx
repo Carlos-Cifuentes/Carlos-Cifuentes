@@ -7,14 +7,14 @@ const Footer = () => {
         
         {/* Texto copyright */}
         <p className="text-sm text-gray-400">
-          © {new Date().getFullYear()} Carlos Cifuentes. All Rights Reserved.
+          © {new Date().getFullYear()} Carlos Cifuentes.
         </p>
 
         {/* Redes sociales o links */}
         <div className="flex space-x-6">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">GitHub</a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">Whatsapp</a>
           <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">LinkedIn</a>
-          <a href="#contacto" className="hover:text-green-400 transition-colors">Contact</a>
+          
         </div>
 
       </div>
