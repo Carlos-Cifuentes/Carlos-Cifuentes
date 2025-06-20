@@ -21,7 +21,7 @@ const StyledWrapper = styled.div`
     align-items: center;
     justify-content: center;
     font-family: "Menlo", "Bitstream Vera Sans Mono", "DejaVu Sans Mono", "Monaco", "Consolas", monospace;
-    border-radius: 3px;
+    border-radius: 10px;
     background: #434d5a;
     border: none;
     padding: 1em 0;

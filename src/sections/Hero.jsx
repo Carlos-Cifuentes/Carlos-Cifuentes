@@ -11,7 +11,7 @@ const Hero = () => {
           <StyledWrapper>
             <div className="loader">
               <span>&lt;</span>
-              <span>DEVELOPER</span>
+              <span>FULL-STACK DEVELOPER</span>
               <span>/&gt;</span>
             </div>
           </StyledWrapper>
@@ -25,8 +25,7 @@ const Hero = () => {
             data-aos-easing="ease-in-back"
             data-aos-delay="600"
             data-aos-offset="0">
-            Full-stack developer <br />
-            Transformo ideas en productos digitales funcionales.
+            Ingeniero en Desarrollo y Gestión de Software.
           </p>
           <div className="flex items-center w-full">
             <ButtonCV />
@@ -47,7 +46,7 @@ const Hero = () => {
 
 const StyledWrapper = styled.div`
   .loader {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 900;
   }
   .loader > * {

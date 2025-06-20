@@ -4,7 +4,7 @@ import projects from '../data/ProjectsData.js';
 
 const Projects = ({ projectsRef }) => {
   return (
-    <section ref={projectsRef} id="proyectos" className=" py-20 px-6 md:px-20 overflow-hidden">
+    <section id="proyectos" ref={projectsRef} className=" py-20 px-6 md:px-20 overflow-hidden">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10" data-aos="fade-up">Projects</h2>
 
       <div className="grid md:grid-cols-3 gap-5">

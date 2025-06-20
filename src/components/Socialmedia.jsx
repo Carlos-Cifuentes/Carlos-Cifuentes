@@ -1,19 +1,23 @@
-import React from 'react'
-import { FaGithub,FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin,FaWhatsapp} from 'react-icons/fa';
 import styled from 'styled-components';
+import socialLinks from '../data/SocialLinks';
 
 const Socialmedia = () => {
+  const whatsappURL = `https://wa.me/${socialLinks.whatsapp.number}?text=${encodeURIComponent(socialLinks.whatsapp.message)}`;
+
   return (
     <StyledWrapper>
         <div className="tecnologias" 
         data-aos="fade-up"
         data-aos-duration="3000">
-            <a className="socialContainer containerOne" href="#">
-            <FaGithub className="socialSvg linkdinSvg"/>
-            </a>
-            <a className="socialContainer containerTwo" href="#">
-            <FaLinkedin className="socialSvg linkdinSvg"/>            
-            </a>
+          <a className="socialContainer containerOne" 
+            href={whatsappURL} target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp className="socialSvg"/>
+          </a>
+          <a className="socialContainer containerTwo" 
+            href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="socialSvg"/>            
+          </a>
         </div>
     </StyledWrapper>
     
@@ -45,7 +49,7 @@ const StyledWrapper = styled.div`
   }
   /* instagram*/
   .containerOne:hover {
-    background-color: #000000;
+    background-color: #25d366;
     transition-duration: .3s;
   }
   /* twitter*/

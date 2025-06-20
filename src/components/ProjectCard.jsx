@@ -43,9 +43,9 @@ import Button from './Button';
   .card {
     padding: 15px;
     width: 100%;
-    min-height: 320px;
+    min-height: 300px;
     border-radius: 25px;
-    background: #056bfa27;
+    background: rgba(65, 65, 65, 0.308);
     transition: 0.4s;
   }
 
@@ -57,7 +57,8 @@ import Button from './Button';
     font-size: 18px;
     font-weight: 600;
     color: #fff;
-    margin: 15px 0 0 10px;
+    margin: 10px 0 0 10px;
+    text-align:center;
   }
 
   .card-image {

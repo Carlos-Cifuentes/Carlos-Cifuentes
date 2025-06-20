@@ -13,13 +13,13 @@ const About = ({ aboutRef }) => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-left">About Me</h2>
           <p className="mb-4" data-aos="fade-left">
-            ¡Hola! Soy un desarrollador full-stack apasionado por crear experiencias web intuitivas y funcionales.
-            Me especializo en React, Node.js y diseño responsivo. Disfruto construir soluciones digitales que
-            impacten positivamente a las personas y a los negocios.
+            Soy un desarrollador full-stack con experiencia en la creación de aplicaciones web modernas, intuitivas y funcionales. Me especializo en tecnologías como React para el frontend y Node.js para el backend, lo que me permite abordar proyectos de forma integral, desde la interfaz de usuario hasta la lógica del servidor.
+          </p>
+          <p className="mb-4" data-aos="fade-left">
+            He trabajado tanto en el desarrollo de proyectos desde cero como en la optimización y mejora de sistemas existentes, aplicando buenas prácticas de programación y diseño responsivo.
           </p>
           <p data-aos="fade-left">
-            Tengo experiencia trabajando en proyectos desde cero, así como en la mejora de sistemas existentes.
-            Me encanta colaborar, aprender constantemente y aplicar buenas prácticas de desarrollo.
+            Disfruto colaborar con equipos multidisciplinarios, aportar soluciones eficientes y aprender continuamente para mantenerme al día con las tendencias tecnológicas.
           </p>
         </div>
       </div>
