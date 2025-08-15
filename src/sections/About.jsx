@@ -13,7 +13,7 @@ const About = ({ aboutRef }) => {
         <div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-left">About Me</h2>
           <p className="mb-4" data-aos="fade-left">
-            Soy un desarrollador full-stack con experiencia en la creación de aplicaciones web modernas, intuitivas y funcionales. Me especializo en tecnologías como React para el frontend y Node.js para el backend, lo que me permite abordar proyectos de forma integral, desde la interfaz de usuario hasta la lógica del servidor.
+            Soy un desarrollador full-stack con experiencia en la creación de aplicaciones web modernas, intuitivas y funcionales, lo que me permite abordar proyectos de forma integral, desde la interfaz de usuario hasta la lógica del servidor.
           </p>
           <p className="mb-4" data-aos="fade-left">
             He trabajado tanto en el desarrollo de proyectos desde cero como en la optimización y mejora de sistemas existentes, aplicando buenas prácticas de programación y diseño responsivo.

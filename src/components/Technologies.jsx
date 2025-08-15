@@ -12,6 +12,8 @@ import seoIcon from '../assets/seo.png'
 import sqlserverIcon from '../assets/sql-server.png'
 import typescriptIcon from '../assets/typescript.svg'
 import apirestIcon from '../assets/api.png'
+import bootstrapIcon from '../assets/Bootstrap_logo.png'
+import cssIcon from '../assets/css-3.png'
 
 const technologyMap = {
   javascript: {
@@ -65,6 +67,14 @@ const technologyMap = {
   vercel: {
     label: "Vercel",
     icon: <SiVercel className='svg-icon4'/>
+  },
+  bootstrap: {
+    label: "Bootstrap",
+    icon: <img src={bootstrapIcon} alt="Bootstrap" className='svg-icon6' />
+  },
+  css: {
+    label: "CSS",
+    icon: <img src={cssIcon} alt="CSS" className='svg-icon4' />
   }
 };
 
@@ -90,7 +100,7 @@ const Technologies = ({ techList = [] }) => {
 const StyledWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
 
   .button {
     display: flex;
@@ -99,7 +109,7 @@ const StyledWrapper = styled.div`
     padding: 8px 12px 8px 16px;
     gap: 8px;
     height: 40px;
-    width: 145px;
+    width: 140px;
     border: none;
     background: #056bfa27;
     border-radius: 10px;
@@ -108,7 +118,7 @@ const StyledWrapper = styled.div`
 
   .lable {
     margin-top: 1px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #fff;
     letter-spacing: 1px;
@@ -144,6 +154,11 @@ const StyledWrapper = styled.div`
   .svg-icon5 {
     height: 20px;
     width: 20px;
+  }
+  
+  .svg-icon6 {
+    height: 20px;
+    width: 25px;
   }
   }`;
 

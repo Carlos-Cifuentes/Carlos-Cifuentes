@@ -10,14 +10,14 @@ const projects = [
     {
       id: 1,
       slug: "enarm",
-      title: 'ENARM',
+      title: 'Portal de Evaluación Médica ENARM',
       description: 'Plataforma educativa orientada al ENARM, con cuestionarios y contenido especializado para aspirantes a residencias médicas.',
-      objective:'Desarrollar una plataforma web especializada en la evaluación y preparación de aspirantes al ENARM, mediante la implementación de encuestas interactivas tipo test, casos clínicos y análisis de resultados. ',
+      objective:'Desarrollar un Portal web especializada en la evaluación y preparación de aspirantes al ENARM, mediante la implementación de encuestas interactivas tipo test, casos clínicos y análisis de resultados. ',
       image: enarmImg,
       company: "Nautilus 360",
       location: "Guadalajara, Jalisco",
       website: 'https://enarm.com.mx/',
-      technologies: ['javascript', 'php', 'mysql', 'phpmailer','paypal', 'seo'],
+      technologies: ['javascript', 'php', 'mysql', 'phpmailer','paypal', 'seo','bootstrap','css'],
       aos: 'fade-right'
     },
     {
@@ -30,7 +30,7 @@ const projects = [
       company: "Nautilus 360",
       location: "Guadalajara, Jalisco",
       website: 'https://costenatravel.com/',
-      technologies: ['javascript', 'php', 'mysql', 'phpmailer','wompi'],
+      technologies: ['javascript', 'php', 'mysql', 'phpmailer','wompi','bootstrap','css'],
       aos: 'fade-up'
     },
     {
@@ -43,7 +43,7 @@ const projects = [
       company: "Nautilus 360",
       location: "Guadalajara, Jalisco",
       website: 'https://360-n.com/OSSC/',
-      technologies: ['javascript', 'php', 'mysql'],
+      technologies: ['javascript', 'php', 'mysql','bootstrap','css'],
       aos: 'fade-left'
     },
     {
@@ -64,6 +64,7 @@ const projects = [
       slug: "tusofo",
       title: 'TuSofo',
       description: 'Página institucional moderna para una SOFOM, con información clara sobre servicios financieros, contacto y enlaces clave.',
+      objective: 'Página institucional moderna para una SOFOM, con información clara sobre servicios financieros, contacto y enlaces clave.',
       image: tusofoImg,
       company: "Nautilus 360",
       location: "Guadalajara, Jalisco",
@@ -76,6 +77,7 @@ const projects = [
       slug: "sistema-integral-servicios-medicos",
       title: 'Sistema Integral de Servicios Médicos',
       description: 'Diseño y desarrollo de una plataforma web médica con múltiples funciones para atención prehospitalaria y gestión clínica.',
+      objective: 'Diseño y desarrollo de una plataforma web médica con múltiples funciones para atención prehospitalaria y gestión clínica.',
       image: crmImg,
       company: "Cruz Roja",
       location: "Huejutla, Hidalgo",
